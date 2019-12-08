@@ -107,7 +107,7 @@ HTTPERROR_ALLOWED_CODES = [404, 302, 403, 301, 500]
 
 MYSQL_HOST = 'localhost'
 MYSQL_USER = 'root'
-MYSQL_PASSWORD = 'ping31415@'
+MYSQL_PASSWORD = ''
 MYSQL_PORT = '3306'
 MYSQL_DBNAME = 'spider_data_base'
 
@@ -151,7 +151,6 @@ date = datetime.now()
 # 发送邮件相关设置 163邮箱
 # 收件人
 STATSMAILER_RCPTS = ['1500132166@qq.com', '184108270@qq.com']
-# STATSMAILER_RCPTS = 'liuzc@jianshutech.com,chensy@jianshutech.com,weipan@jianshutech.com'
 # 项目名
 PROJECT_NAME = '爬虫指定数量错误关闭发送邮件测试'
 # 邮件发送服务器
@@ -159,7 +158,7 @@ MAIL_HOST = 'smtp.163.com'
 # 发件人地址
 MAIL_FROM = '18942269545@163.com'
 # 授权码或者密码
-MAIL_PASS = 'ping1688'
+MAIL_PASS = ''
 # 邮件发送服务器端口
 MAIL_PORT = 25
 
