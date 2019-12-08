@@ -1,0 +1,179 @@
+2019-12-08 20:56:54 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: SuperNewsCrawlSpider)
+2019-12-08 20:56:54 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-7-6.1.7601-SP1
+2019-12-08 20:56:54 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'SuperNewsCrawlSpider', 'CLOSESPIDER_ERRORCOUNT': 1, 'DOWNLOAD_DELAY': 0.3, 'LOG_FILE': 'log/2019-12-8T20_56_54.log', 'MAIL_FROM': '18942269545@163.com', 'MAIL_HOST': 'smtp.163.com', 'MAIL_PASS': 'ping1688', 'NEWSPIDER_MODULE': 'SuperNewsCrawlSpider.spiders', 'SPIDER_MODULES': ['SuperNewsCrawlSpider.spiders'], 'STATSMAILER_RCPTS': ['1500132166@qq.com', '184108270@qq.com']}
+2019-12-08 20:56:55 [scrapy.extensions.telnet] INFO: Telnet Password: 768104dbee660005
+2019-12-08 20:56:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.closespider.CloseSpider',
+ 'scrapy.extensions.logstats.LogStats',
+ 'SuperNewsCrawlSpider.extensions.closespider.CloseSpider']
+2019-12-08 20:57:00 [fake_useragent] DEBUG: Error occurred during fetching https://www.w3schools.com/browsers/default.asp
+Traceback (most recent call last):
+  File "D:\microsoft\python\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "D:\microsoft\python\lib\http\client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\microsoft\python\lib\http\client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\microsoft\python\lib\http\client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\microsoft\python\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "D:\microsoft\python\lib\http\client.py", line 966, in send
+    self.connect()
+  File "D:\microsoft\python\lib\http\client.py", line 1406, in connect
+    super().connect()
+  File "D:\microsoft\python\lib\http\client.py", line 938, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "D:\microsoft\python\lib\socket.py", line 727, in create_connection
+    raise err
+  File "D:\microsoft\python\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "D:\microsoft\python\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\microsoft\python\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "D:\microsoft\python\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "D:\microsoft\python\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "D:\microsoft\python\lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "D:\microsoft\python\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error timed out>
+2019-12-08 20:57:00 [fake_useragent] DEBUG: Sleeping for 0.1 seconds
+2019-12-08 20:57:05 [fake_useragent] DEBUG: Error occurred during fetching https://www.w3schools.com/browsers/default.asp
+Traceback (most recent call last):
+  File "D:\microsoft\python\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "D:\microsoft\python\lib\http\client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\microsoft\python\lib\http\client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\microsoft\python\lib\http\client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\microsoft\python\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "D:\microsoft\python\lib\http\client.py", line 966, in send
+    self.connect()
+  File "D:\microsoft\python\lib\http\client.py", line 1406, in connect
+    super().connect()
+  File "D:\microsoft\python\lib\http\client.py", line 938, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "D:\microsoft\python\lib\socket.py", line 727, in create_connection
+    raise err
+  File "D:\microsoft\python\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "D:\microsoft\python\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\microsoft\python\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "D:\microsoft\python\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "D:\microsoft\python\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "D:\microsoft\python\lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "D:\microsoft\python\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error timed out>
+2019-12-08 20:57:05 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-12-08 20:57:06 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "D:\microsoft\python\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "D:\microsoft\python\lib\http\client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\microsoft\python\lib\http\client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\microsoft\python\lib\http\client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\microsoft\python\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "D:\microsoft\python\lib\http\client.py", line 966, in send
+    self.connect()
+  File "D:\microsoft\python\lib\http\client.py", line 1406, in connect
+    super().connect()
+  File "D:\microsoft\python\lib\http\client.py", line 938, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "D:\microsoft\python\lib\socket.py", line 727, in create_connection
+    raise err
+  File "D:\microsoft\python\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "D:\microsoft\python\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\microsoft\python\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "D:\microsoft\python\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "D:\microsoft\python\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "D:\microsoft\python\lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "D:\microsoft\python\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error timed out>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\microsoft\python\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\microsoft\python\lib\site-packages\scrapy\crawler.py", line 86, in crawl
+    self.engine = self._create_engine()
+  File "D:\microsoft\python\lib\site-packages\scrapy\crawler.py", line 111, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "D:\microsoft\python\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "D:\microsoft\python\lib\site-packages\scrapy\core\downloader\__init__.py", line 86, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "D:\microsoft\python\lib\site-packages\scrapy\middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "D:\microsoft\python\lib\site-packages\scrapy\middleware.py", line 35, in from_settings
+    mw = create_instance(mwcls, settings, crawler)
+  File "D:\microsoft\python\lib\site-packages\scrapy\utils\misc.py", line 142, in create_instance
+    return objcls.from_crawler(crawler, *args, **kwargs)
+  File "E:\GitHubDownLoad\SuperNewsCrawlSpider\SuperNewsCrawlSpider\middlewares.py", line 127, in from_crawler
+    return cls(crawler)
+  File "E:\GitHubDownLoad\SuperNewsCrawlSpider\SuperNewsCrawlSpider\middlewares.py", line 122, in __init__
+    self.ua = UserAgent(path=self.path,use_cache_server=False)
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\fake.py", line 69, in __init__
+    self.load()
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\fake.py", line 78, in load
+    verify_ssl=self.verify_ssl,
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\utils.py", line 250, in load_cached
+    update(path, use_cache_server=use_cache_server, verify_ssl=verify_ssl)
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\utils.py", line 245, in update
+    write(path, load(use_cache_server=use_cache_server, verify_ssl=verify_ssl))
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\utils.py", line 178, in load
+    raise exc
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\utils.py", line 154, in load
+    for item in get_browsers(verify_ssl=verify_ssl):
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\utils.py", line 97, in get_browsers
+    html = get(settings.BROWSERS_STATS_PAGE, verify_ssl=verify_ssl)
+  File "D:\microsoft\python\lib\site-packages\fake_useragent\utils.py", line 84, in get
+    raise FakeUserAgentError('Maximum amount of retries reached')
+fake_useragent.errors.FakeUserAgentError: Maximum amount of retries reached
