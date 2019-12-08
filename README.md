@@ -1,0 +1,2 @@
+# SuperNewsCrawlSpider
+scrapy news
